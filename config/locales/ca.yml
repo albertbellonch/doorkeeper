@@ -1,0 +1,74 @@
+en:
+  activerecord:
+    errors:
+      models:
+        application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'no pot contenir un fragment.'
+              has_query_parameter: 'no pot contenir un paràmetre de cerca.'
+              invalid_uri: 'ha de ser una URI vàlida.'
+              relative_uri: 'ha de ser una URI absoluta.'
+  mongoid:
+    errors:
+      models:
+        application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'no pot contenir un fragment.'
+              has_query_parameter: 'no pot contenir un paràmetre de cerca.'
+              invalid_uri: 'ha de ser una URI vàlida.'
+              relative_uri: 'ha de ser una URI absoluta.'
+  mongo_mapper:
+    errors:
+      models:
+        application:
+          attributes:
+            redirect_uri:
+              fragment_present: 'no pot contenir un fragment.'
+              has_query_parameter: 'no pot contenir un paràmetre de cerca.'
+              invalid_uri: 'ha de ser una URI vàlida.'
+              relative_uri: 'ha de ser una URI absoluta.'
+  doorkeeper:
+    errors:
+      messages:
+        # Common error messages
+        invalid_request: 'La petició no conté un paràmetre requerid, inclou un paràmetre no suportat, o està malformada.'
+        invalid_redirect_uri: 'La URI de redirecció inclosa no és vàlida.'
+        unauthorized_client: 'El client no està autoritzat per dur a terme aquesta petició utilitzant aquest mètode.'
+        access_denied: "El propietari del recurs o el servidor d'autorització han denegat la petició."
+        invalid_scope: "L'scope és invàlid, desconegut o malformat."
+        server_error: "El servidor d'autorització ha trobat una condició no esperada que no ha permés completar la petició."
+        temporarily_unavailable: "El servidor d'autorització ara mateix no pot gestionar la petició degut a una sobrecàrrega temporal o a manteniment del servidor."
+
+        #configuration error messages
+        credential_flow_not_configured: 'El flux de credencials ha fallat degut a que Doorkeeper.configure.resource_owner_from_credentials no està ben configurat.'
+        resource_owner_authenticator_not_configured: "No s'ha pogut recuperar el propietari del recurs ja que Doorkeeper.configure.resource_owner_authenticator no està ben configurat."
+
+        # Access grant errors
+        unsupported_response_type: "El servidor d'autorització no suporta aquest tipus de resposta."
+
+        # Access token errors
+        invalid_client: "L'autenticació del client ha fallat degut a que el client és desconegut, no s'ha inclòs autenticació de client, o el mètode d'autenticació no està permès."
+        invalid_grant: "El permís d'autorització és invàlid, ha expirat, s'ha revocat o no concorda amb la URI de redirecció utilitzada en la petició d'autorització, o ha estat emès per un altre client."
+        unsupported_grant_type: "El tipus del permís d'autorització no està suportat pel servidor d'autorització."
+
+        # Password Access token errors
+        invalid_resource_owner: 'Les credencials proporcionades no són vàlides, o bé el propietari del recurs no existeix.'
+
+        invalid_token:
+          revoked: "El token d'accés ha estat revocat"
+          expired: "El token d'accés ha expirat"
+          unknown: "El token d'accés és invàlid"
+
+    flash:
+      applications:
+        create:
+          notice: 'Aplicació creada.'
+        destroy:
+          notice: 'Aplicació esborrada.'
+        update:
+          notice: 'Aplicació actualitzada.'
+      authorized_applications:
+        destroy:
+          notice: 'Aplicació revocada.'
